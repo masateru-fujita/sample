@@ -1,0 +1,10 @@
+{% extends 'users/base.html' %}
+{% load static %}
+
+{% block content %}
+<h1>HelloWorld!aaaa</h1>
+{% for user in users %}
+<p>{{ user.name }}</p>
+{% endfor %}
+<a href=" {% url 'users:create' %} ">hogehoge</a>
+{% endblock content %}

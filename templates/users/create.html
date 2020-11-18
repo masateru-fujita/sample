@@ -1,0 +1,15 @@
+{% extends 'users/base.html' %}
+{% load static %}
+{% block content %}
+<h1>HelloWorld!Create</h1>
+<form method="POST">
+{% csrf_token %}
+    <div>
+        <p>ユーザ名</p>
+    </div>
+    <div>
+        <input type="text" name="name">
+    </div>
+    <button type="submit" value="登録">登録</button>
+</form>
+{% endblock content %}
